@@ -1,1 +1,4 @@
 /report\ templates/
+/outData/
+.ipynb_checkpoints
+.idea/
