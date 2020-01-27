@@ -14,7 +14,7 @@ def getSingleFrequents(baskets, s):
             countTable[item] += 1
     # print support
     # print countTable
-    for item, count in countTable.iteritems():
+    for item, count in countTable.items():
         if count >= support:
             result.append(item)
     return sorted(result)
@@ -49,7 +49,7 @@ def getFrequents(baskets, s, previousfrequents, size):
                 counttable.setdefault(candidate, 0)
                 counttable[candidate] += 1
     # print counttable
-    for candidate, count in counttable.iteritems():
+    for candidate, count in counttable.items():
         if count >= support:
             result.append(candidate)
     # print sorted(result)
@@ -79,14 +79,15 @@ def apriori(iterator):
 
 
 if __name__ == "__main__":
-    inputfile = './data/groceries.csv'
-    s = 0.7
+    inputfile = './outData/test.txt'
+    s = 0.5
     outputfile = "./outData/demofileSaprk.txt"
 
     sc = SparkContext(appName='SON_APRIORI')
 
     lines = sc.textFile(inputfile).map(lambda line: line.strip().split(',')).map(lambda line: map(int, line))
 
+    print('lines:', lines)
     result = lines.mapPartitions(apriori)
 
     support = lines.count() * s
