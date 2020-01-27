@@ -1,25 +1,31 @@
-import sys
+import itertools
 import time
+import pandas as pd
+import ast
+import pync
+
+
+# Global variables
+confidence = 0.2
+buckets = []
 
 
 def openfile():
     "Opening input file"
     file_name = './data/groceries.csv'
-    minsupport = 20
-    nbuckets = 4
+    minsupport = 50
+    nBucketsBitmap = 50
     "Reading input file"
     doc = open(file_name).read()
     "Removing newline characters"
     newfile = doc.split()
     "Creating buckets"
-    buckets = []
     for x in newfile:
         buckets.append(x.split(','))
+    #size1freqset(minsupport, nBucketsBitmap, buckets)
 
-    size1freqset(minsupport, nbuckets, buckets);
 
-
-def size1freqset(minsupport, nbuckets, buckets):
+def size1freqset(minsupport, nBucketsBitmap, buckets):
     "Creating Candidate List of Size 1"
     candidatelist1 = []
     finalist1 = []
@@ -36,11 +42,11 @@ def size1freqset(minsupport, nbuckets, buckets):
     for k in candidatelist1:
         for i in range(0, len(buckets)):
             for j in buckets[i]:
-                if (k == j):
+                if k == j:
                     support += 1
         if support >= minsupport:
             finalist1.append(k)
-            f.write('\n' + str(k) + '\t' + str(support))
+            f.write('\n[\'' + str(k) + '\']\t' + str(support))
         support = 0
 
     itemiddic = {}
@@ -55,16 +61,16 @@ def size1freqset(minsupport, nbuckets, buckets):
         for x in finalist1:
             print(x)
 
-        size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1);
+        size2freqset(minsupport, nBucketsBitmap, itemiddic, buckets, finalist1);
     else:
         print("That's all folks: size1freqset!")
 
 
-def size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1):
+def size2freqset(minsupport, nBucketsBitmap, itemiddic, buckets, finalist1):
     k = 3
 
-    countofbuckets = [0] * nbuckets
-    bitmap = [0] * nbuckets
+    countofbuckets = [0] * nBucketsBitmap
+    bitmap = [0] * nBucketsBitmap
     pairs = []
 
     "PCY Pass 1"
@@ -72,11 +78,11 @@ def size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1):
         for x in range(0, len(buckets[i]) - 1):
             for y in range(x + 1, len(buckets[i])):
                 if buckets[i][x] < buckets[i][y]:
-                    countofbuckets[int(str(itemiddic[buckets[i][x]]) + str(itemiddic[buckets[i][y]])) % nbuckets] += 1
+                    countofbuckets[int(str(itemiddic[buckets[i][x]]) + str(itemiddic[buckets[i][y]])) % nBucketsBitmap] += 1
                     if ([buckets[i][x], buckets[i][y]] not in pairs):
                         pairs.append(sorted([buckets[i][x], buckets[i][y]]))
                 else:
-                    countofbuckets[int(str(itemiddic[buckets[i][y]]) + str(itemiddic[buckets[i][x]])) % nbuckets] += 1
+                    countofbuckets[int(str(itemiddic[buckets[i][y]]) + str(itemiddic[buckets[i][x]])) % nBucketsBitmap] += 1
                     if ([buckets[i][y], buckets[i][x]] not in pairs):
                         pairs.append(sorted([buckets[i][y], buckets[i][x]]))
 
@@ -84,9 +90,9 @@ def size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1):
 
     for x in range(0, len(countofbuckets)):
         if countofbuckets[x] >= minsupport:
-            bitmap[x] = 1
+            bitmap[x] = True
         else:
-            bitmap[x] = 0
+            bitmap[x] = False
 
     prunedpairs = []
 
@@ -102,7 +108,7 @@ def size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1):
     "Checking condition 2 of PCY Pass 2"
     for i in range(0, len(prunedpairs)):
         for j in range(0, len(prunedpairs[i]) - 1):
-            if bitmap[int(str(itemiddic[prunedpairs[i][j]]) + str(itemiddic[prunedpairs[i][j + 1]])) % nbuckets] == 1:
+            if bitmap[int(str(itemiddic[prunedpairs[i][j]]) + str(itemiddic[prunedpairs[i][j + 1]])) % nBucketsBitmap]:
                 candidatelist2.append(prunedpairs[i])
 
     "Appending frequent items of size 2 to finallist2"
@@ -124,15 +130,16 @@ def size2freqset(minsupport, nbuckets, itemiddic, buckets, finalist1):
         print("\nFrequent Itemsets of size 2")
         for b in finalist2:
             print(','.join(b))
-        sizekfreqset(minsupport, nbuckets, itemiddic, buckets, finalist2, k)
+        sizekfreqset(minsupport, nBucketsBitmap, itemiddic, buckets, finalist2, k)
+
     else:
         print("That's all folks!")
 
 
-def sizekfreqset(minsupport, nbuckets, itemiddic, buckets, prevout, k):
+def sizekfreqset(minsupport, nBucketsBitmap, itemiddic, buckets, prevout, k):
     """Creating Candidate List of Size k"""
-    kcountofbuckets = [0] * nbuckets
-    kbitmap = [0] * nbuckets
+    kcountofbuckets = [0] * nBucketsBitmap
+    kbitmap = [0] * nBucketsBitmap
     kcombination = []
     prevout = prevout
 
@@ -153,14 +160,14 @@ def sizekfreqset(minsupport, nbuckets, itemiddic, buckets, prevout, k):
     for i in range(0, len(kcombination)):
         for x in kcombination[i]:
             hashingstring += str(itemiddic[x])
-        kcountofbuckets[int(hashingstring) % nbuckets] += 1
+        kcountofbuckets[int(hashingstring) % nBucketsBitmap] += 1
         hashingstring = ""
 
     for x in range(0, len(kcountofbuckets)):
         if kcountofbuckets[x] >= minsupport:
-            kbitmap[x] = 1
+            kbitmap[x] = True
         else:
-            kbitmap[x] = 0
+            kbitmap[x] = False
 
     "Condition 1 is automatically satisfied"
 
@@ -171,9 +178,8 @@ def sizekfreqset(minsupport, nbuckets, itemiddic, buckets, prevout, k):
     for i in range(0, len(kcombination)):
         for j in kcombination[i]:
             hashingstring += str(itemiddic[j])
-        if kbitmap[int(hashingstring) % nbuckets] == 1:
+        if kbitmap[int(hashingstring) % nBucketsBitmap]:
             klist.append(kcombination[i])
-        teststring = ""
 
     "Creating Candidate List of Size k"
     candidatelistk = []
@@ -208,81 +214,72 @@ def sizekfreqset(minsupport, nbuckets, itemiddic, buckets, prevout, k):
         for b in output:
             print(','.join(b))
         k += 1
-        sizekfreqset(minsupport, nbuckets, itemiddic, buckets, output, k);
+        sizekfreqset(minsupport, nBucketsBitmap, itemiddic, buckets, output, k);
     else:
         print("That's all folks!")
 
 
-def create_rules(freq_items, item_support_dict, min_confidence):
-    """
-    create the association rules, the rules will be a list.
-    each element is a tuple of size 4, containing rules'
-    left hand side, right hand side, confidence and lift
-    """
-    association_rules = []
-
-    # for the list that stores the frequent items, loop through
-    # the second element to the one before the last to generate the rules
-    # because the last one will be an empty list. It's the stopping criteria
-    # for the frequent itemset generating process and the first one are all
-    # single element frequent itemset, which can't perform the set
-    # operation X -> Y - X
-    for idx, freq_item in enumerate(freq_items[1:(len(freq_items) - 1)]):
-        for freq_set in freq_item:
-
-            # start with creating rules for single item on
-            # the right hand side
-            subsets = [frozenset([item]) for item in freq_set]
-            rules, right_hand_side = compute_conf(freq_items, item_support_dict,
-                                                  freq_set, subsets, min_confidence)
-            association_rules.extend(rules)
-
-            # starting from 3-itemset, loop through each length item
-            # to create the rules, as for the while loop condition,
-            # e.g. suppose you start with a 3-itemset {2, 3, 5} then the
-            # while loop condition will stop when the right hand side's
-            # item is of length 2, e.g. [ {2, 3}, {3, 5} ], since this
-            # will be merged into 3 itemset, making the left hand side
-            # null when computing the confidence
-            if idx != 0:
-                k = 0
-                while len(right_hand_side[0]) < len(freq_set) - 1:
-                    ck = create_candidate_k(right_hand_side, k=k)
-                    rules, right_hand_side = compute_conf(freq_items, item_support_dict,
-                                                          freq_set, ck, min_confidence)
-                    association_rules.extend(rules)
-                    k += 1
-
-    return association_rules
+def findsubsets(S,m):
+    return set(itertools.combinations(S, m))
 
 
-def compute_conf(freq_items, item_support_dict, freq_set, subsets, min_confidence):
-    """
-    create the rules and returns the rules info and the rules's
-    right hand side (used for generating the next round of rules)
-    if it surpasses the minimum confidence threshold
-    """
-    rules = []
-    right_hand_side = []
+def frequent_itemsetsFromFile():
+    freqDf = pd.read_csv('./outData/demofile.txt', sep='\t', header=None)
+    return freqDf[0].values.tolist()
 
-    for rhs in subsets:
-        # create the left hand side of the rule
-        # and add the rules if it's greater than
-        # the confidence threshold
-        lhs = freq_set - rhs
-        conf = item_support_dict[freq_set] / item_support_dict[lhs]
-        if conf >= min_confidence:
-            lift = conf / item_support_dict[rhs]
-            rules_info = lhs, rhs, conf, lift
-            rules.append(rules_info)
-            right_hand_side.append(rhs)
 
-    return rules, right_hand_side
+def generate_association_rules():
+    s = []
+    r = []
+    length = 0
+    count = 1
+    inc1 = 0
+    inc2 = 0
+    num = 1
+    m = []
+    L = frequent_itemsetsFromFile()
+
+    print("---------------------ASSOCIATION RULES------------------")
+
+    for lista in L:
+        lista = ast.literal_eval(lista)
+
+        length = len(lista)
+        count = 1
+        while count < length:
+            s = []
+            r = findsubsets(lista, count)
+            count += 1
+            for item in r:
+                inc1 = 0
+                inc2 = 0
+                s = []
+                m = []
+                for i in item:
+                    s.append(i)
+                for T in buckets:
+                    if set(s).issubset(set(T)):
+                        inc1 += 1
+                    if set(lista).issubset(set(T)):
+                        inc2 += 1
+                if inc2/inc1 >= confidence:
+                    for index in lista:
+                        if index not in s:
+                            m.append(index)
+                    print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, s, m,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len(buckets) ))
+                    num += 1
 
 
 t0 = time.time()
 openfile()
 t1 = time.time()
-
 total = t1 - t0
-print('Elapsed Time:', str(t1))
+print('Elapsed Time PCY:', str(t1))
+
+pync.notify('End PCY - Frequent Items')
+
+generate_association_rules()
+
+pync.notify('End RULES - Frequent Items')
+
+
