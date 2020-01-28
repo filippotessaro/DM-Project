@@ -1,3 +1,5 @@
+import json
+
 from pyspark import SparkContext
 import shutil
 import os
@@ -85,7 +87,21 @@ def frequent_itemsetsFromFile(freq_items_file):
     return temp
 
 
-def generate_association_rules(in_file_name, freq_items_file, confidence):
+def reading_dict(in_file):
+    whip = eval(open(in_file, 'r').read())
+    return whip
+
+
+def getKeysByValue(dictOfElements, valueToFind):
+    listOfKeys = list()
+    listOfItems = dictOfElements.items()
+    for item  in listOfItems:
+        if item[1] == valueToFind:
+            listOfKeys.append(item[0])
+    return  listOfKeys
+
+def generate_association_rules(in_file_name, freq_items_file, saved_dict_file, confidence):
+    dictionary_converter = reading_dict(saved_dict_file)
     s = []
     r = []
     num = 1
@@ -132,15 +148,22 @@ def generate_association_rules(in_file_name, freq_items_file, confidence):
                         for index in lista:
                             if index not in s:
                                 m.append(index)
+                        #print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, s, m,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len(buckets) ))
+                        for item in range(len(s)):
+                            s[item] = getKeysByValue(dictionary_converter, s[item])
+                        for item2 in range(len(m)):
+                            m[item2] = getKeysByValue(dictionary_converter, m[item2])
                         print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, s, m,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len(buckets) ))
-                        num += 1
 
+
+
+                        num += 1
 
 if __name__ == "__main__":
     #if os.path.exists(sys.argv[2]):
         #shutil.rmtree(sys.argv[2])
     #apriori(SparkContext(appName="Spark Apriori"), sys.argv[1], sys.argv[2], float(sys.argv[3]))
-    apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/test.txt", "./result/test", 100)
+    #apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/test.txt", "./result/test", 100)
 
     # Rule generation part
-    generate_association_rules("./outData/test.txt", "./outData/rules-numbers.txt", 0.5)
+    generate_association_rules("./outData/test.txt", "./outData/rules-numbers.txt", "./outData/dict.txt", 0.5)

@@ -5,7 +5,7 @@ into a file with IDs encoded in a correct way.
 
 superm = []
 baskets = []
-with open('./data/groceries.csv', 'r') as f:
+with open('../data/groceries.csv', 'r') as f:
     for line in f:
         basket = []
         items = line.split(",")
@@ -29,13 +29,13 @@ for e in elems:
 print("Mapping")
 print(mapping)
 
-f = open("./outData/dict.txt","w")
+f = open("../outData/dict.txt","w")
 f.write( str(mapping) )
 f.close()
 
 newBaskets = []
 
-fileNew = open('./outData/test.txt', 'a')
+fileNew = open('../outData/test.txt', 'a')
 
 for basket in baskets:
     line_file = list()
