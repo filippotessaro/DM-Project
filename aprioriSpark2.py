@@ -1,15 +1,6 @@
-import os
-import shutil
-import sys
-
 from pyspark import SparkContext
-
-DEBUG = 1
-
-
-def Dprint(info):
-    if DEBUG:
-        print(info)
+import shutil
+import os
 
 
 def generate_next_c(f_k, k):
@@ -31,17 +22,15 @@ def generate_f_k(sc, c_k, shared_itemset, sup):
 
 
 def apriori(sc, f_input, f_output, min_sup):
-    # read the raw data
+    # read txt file
     data = sc.textFile(f_input)
-    # count the total number of samples
-    n_samples = data.count()
-    # min_sup to frequency
-    sup = n_samples * min_sup
+    # min_suport
+    sup = min_sup
     # split sort
-    itemset = data.map(lambda line: sorted([int(item) for item in line.strip().split(', ')]))
-    # share the whole itemset with all workers
+    itemset = data.map(lambda line: sorted([int(item) for item in line.strip().split(',')]))
+    # share itemset with all workers
     shared_itemset = sc.broadcast(itemset.map(lambda x: set(x)).collect())
-    # store for all freq_k
+    # frequent itemset list
     frequent_itemset = []
 
     # prepare candidate_1
@@ -52,16 +41,19 @@ def apriori(sc, f_input, f_output, min_sup):
     # when candidate_k is not empty
     while len(c_k) > 0:
         # generate freq_k
-        Dprint("C{}: {}".format(k, c_k))
+        print("Candiates{}: {}".format(k, c_k))
         f_k = generate_f_k(sc, c_k, shared_itemset, sup)
-        Dprint("F{}: {}".format(k, f_k))
-
+        print("Frequents{}: {}".format(k, f_k))
         frequent_itemset.append(f_k)
         # generate candidate_k+1
         k += 1
         c_k = generate_next_c([set(item) for item in map(lambda x: x[0], f_k)], k)
 
-    # output the result to file system
+    # Remove Old Dir
+    isFile = os.path.isdir('./result/')
+    if isFile:
+        shutil.rmtree('./result/')
+    # Save to File
     sc.parallelize(frequent_itemset, numSlices=1).saveAsTextFile(f_output)
     sc.stop()
 
@@ -70,7 +62,4 @@ if __name__ == "__main__":
     #if os.path.exists(sys.argv[2]):
         #shutil.rmtree(sys.argv[2])
     #apriori(SparkContext(appName="Spark Apriori"), sys.argv[1], sys.argv[2], float(sys.argv[3]))
-    apriori(SparkContext(appName="Spark Apriori"), "./outData/test.txt", "./result/test", 0.7)
-    # apriori(SparkContext(appName="Spark Apriori"), "../data/chess.dat", "../result/chess", 0.8)
-    # apriori(SparkContext(appName="Spark Apriori"), "../data/mushroom.dat", "../result/mushroom", 0.8)
-    # apriori(SparkContext(appName="Spark Apriori"), "../data/connect.dat", "../result/connect", 0.9)
+    apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/test.txt", "./result/test", 40)
