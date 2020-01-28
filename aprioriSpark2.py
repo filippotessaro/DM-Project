@@ -21,6 +21,11 @@ def generate_f_k(sc, c_k, shared_itemset, sup):
     return f_k
 
 
+def LogToFile(text):
+    f = open('./outData/rules-numbers.txt', 'a')
+    f.write(str(text) + '\n')
+
+
 def apriori(sc, f_input, f_output, min_sup):
     # read txt file
     data = sc.textFile(f_input)
@@ -44,6 +49,7 @@ def apriori(sc, f_input, f_output, min_sup):
         print("Candiates{}: {}".format(k, c_k))
         f_k = generate_f_k(sc, c_k, shared_itemset, sup)
         print("Frequents{}: {}".format(k, f_k))
+        LogToFile("Frequents{}: {}".format(k, f_k))
         frequent_itemset.append(f_k)
         # generate candidate_k+1
         k += 1
