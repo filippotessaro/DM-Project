@@ -8,7 +8,7 @@ OUTPUT:
 """
 
 baskets = []
-with open('../data/groceries.csv', 'r') as f:
+with open('../data/groceries_norm.csv', 'r') as f:
     for line in f:
         basket = []
         line = line[:-1]
@@ -17,11 +17,9 @@ with open('../data/groceries.csv', 'r') as f:
             basket.append(item)
         baskets.append(basket)
 
-#baskets = set(baskets)
 elems = set()
 for b in baskets:
     elems.update(b)
-
 
 mapping = {}
 reverseMapping = {}
@@ -38,11 +36,11 @@ dict = open("../outData/norm-dict.txt", "w")
 dict.write(str(mapping))
 dict.close()
 
-ds = open('../outData/norm-groceries.txt', 'a')
+ds = open('../outData/norm-groceries.csv', 'w')
 for basket in baskets:
-    line_file = list()
+    line_file = ''
     for item in basket:
-        line_file.append(mapping[item])
-    ds.write(str(line_file)[1:-1] + '\n')
-    line_file = []
+        line_file += str(mapping[item]) + ','
+    line_file = line_file[:-1]
+    ds.write(line_file + '\n')
 ds.close()

@@ -1,10 +1,4 @@
-import json
-
 from pyspark import SparkContext
-import shutil
-import os
-import ast
-import pandas as pd
 import itertools
 
 
@@ -26,56 +20,46 @@ def generate_f_k(sc, c_k, shared_itemset, sup):
     return f_k
 
 
-def LogToFile(text):
-    f = open('./outData/rules-numbers.txt', 'a')
+def log_to_file(text, fname):
+    f = open(fname, 'a')
     for key in text:
-        temp = str(key[0]).replace("{", "")
-        temp = temp.replace("}", "")
-        f.write(temp + '\n')
+        temp = str(key[0])[1:-1]
+        f.write(temp.replace(' ', '') + '\n')
+    f.close()
 
 
-def apriori(sc, f_input, f_output, min_sup):
-    # read txt file
+def apriori(sc, f_input, f_out, sup):
+
+    # Read txt file
     data = sc.textFile(f_input)
-    # min_suport
-    sup = min_sup
-    # split sort
-    itemset = data.map(lambda line: sorted([int(item) for item in line.strip().split(',')]))
-    # share itemset with all workers
+    itemset = data.map(lambda line: sorted([int(item) for item in line.split(',')]))
+
+    # Share itemset with all workers
     shared_itemset = sc.broadcast(itemset.map(lambda x: set(x)).collect())
-    # frequent itemset list
+
+    # Frequent itemset list
     frequent_itemset = []
 
-    # prepare candidate_1
+    # Prepare candidate_1 (k=1)
     k = 1
     c_k = itemset.flatMap(lambda x: set(x)).distinct().collect()
     c_k = [{x} for x in c_k]
 
-    # when candidate_k is not empty
+    # When candidate_k is not empty
     while len(c_k) > 0:
-        # generate freq_k
-        print("Candiates{}: {}".format(k, c_k))
+
+        # Generate freq_k
         f_k = generate_f_k(sc, c_k, shared_itemset, sup)
         print("Frequents{}: {}".format(k, f_k))
-        LogToFile(f_k)
+        log_to_file(f_k, f_out)
         frequent_itemset.append(f_k)
         # generate candidate_k+1
         k += 1
         c_k = generate_next_c([set(item) for item in map(lambda x: x[0], f_k)], k)
 
-    # Remove Old Dir
-    '''isFile = os.path.isdir('./result/')
-    if isFile:
-        shutil.rmtree('./result/')
-    # Save to File
-    sc.parallelize(frequent_itemset, numSlices=1).saveAsTextFile(f_output)'''
     sc.stop()
 
-def findsubsets(S,m):
-    return set(itertools.combinations(S, m))
-
-
-def frequent_itemsetsFromFile(freq_items_file):
+def frequent_itemsets_from_file(freq_items_file):
     newfile = open(freq_items_file)
     temp = []
     for x in newfile:
@@ -87,11 +71,6 @@ def frequent_itemsetsFromFile(freq_items_file):
     return temp
 
 
-def reading_dict(in_file):
-    whip = eval(open(in_file, 'r').read())
-    return whip
-
-
 def getKeysByValue(dictOfElements, valueToFind):
     listOfKeys = list()
     listOfItems = dictOfElements.items()
@@ -100,70 +79,108 @@ def getKeysByValue(dictOfElements, valueToFind):
             listOfKeys.append(item[0])
     return  listOfKeys
 
-def generate_association_rules(in_file_name, freq_items_file, saved_dict_file, confidence):
-    dictionary_converter = reading_dict(saved_dict_file)
-    s = []
-    r = []
+
+def get_support(bucket, left, fr_item):
+    inc1 = 0
+    inc2 = 0
+    if set(left).issubset(set(bucket)):
+        inc1 = 1
+    if set(fr_item).issubset(set(bucket)):
+        inc2 = 1
+    return (0, [inc1, inc2])
+
+
+def generate_association_rules(sc, in_file_name, freq_items_file, saved_dict_file, rules_out_file, confidence):
+
+    dictionary_converter = eval(open(saved_dict_file, 'r').read())
+
     num = 1
-    m = []
     buckets = []
+
     doc = open(in_file_name).read()
-    "Removing newline characters"
+
+    # Removing newline characters
     newfile = doc.split('\n')
-    "Creating buckets"
-    for x in newfile:
-        temp_list = x.split(',')
-        for i in range(0, len(temp_list)):
-            if not temp_list[i] == '':
-                temp_list[i] = int(temp_list[i])
-            else:
-                temp_list.remove(temp_list[i])
-        buckets.append(temp_list)
 
-    L = frequent_itemsetsFromFile(freq_items_file)
+    if sc is None:
+        # Creating buckets
+        for x in newfile:
+            temp_list = x.split(',')
+            for i in range(0, len(temp_list)):
+                if not temp_list[i] == '':
+                    temp_list[i] = int(temp_list[i])
+                else:
+                    temp_list.remove(temp_list[i])
+            buckets.append(temp_list)
+        len_buckets = len(buckets)
+    else:
+        data = sc.textFile(in_file_name)
+        spark_baskets = data.map(lambda line: sorted([int(item) for item in line.split(',')]))
+        len_buckets = spark_baskets.count()
+        shared_itemset = sc.broadcast(spark_baskets.map(lambda x: set(x)).collect())
 
-    print("---------------------ASSOCIATION RULES------------------")
+    L = frequent_itemsets_from_file(freq_items_file)
 
-    for lista in L:
-        length = len(lista)
+    print("--------------------- ASSOCIATION RULES ------------------")
+
+    rules_apped_file = open(rules_out_file, 'w')
+    for fr_item in L:
+        length = len(fr_item)
         count = 1
         while count < length:
-            s = []
-            r = findsubsets(lista, count)
+            subsets = set(itertools.combinations(fr_item, count))
             count += 1
-            for item in r:
+            for sub in subsets:
                 inc1 = 0
                 inc2 = 0
-                s = []
-                m = []
-                for i in item:
-                    s.append(i)
-                for T in buckets:
-                    if set(s).issubset(set(T)):
-                        inc1 += 1
-                    if set(lista).issubset(set(T)):
-                        inc2 += 1
-                if not inc1 == 0 and not inc2 == 0:
+                left = list(sub)
+                rigth = []
+
+                # Map Reduce for support counting
+                if sc is None:
+                    for bucket in buckets:
+                        # Increase support for left and right sides
+                        if set(left).issubset(set(bucket)):
+                            inc1 += 1
+                        if set(fr_item).issubset(set(bucket)):
+                            inc2 += 1
+                else:
+                    support = spark_baskets.map(lambda bucket: get_support(bucket, left, fr_item)).reduceByKey(lambda x, y: [x[0] + y[0], x[1] + y[1]]).collect()[0][1]
+                    inc1 = support[0]
+                    inc2 = support[1]
+
+                if inc1*inc2 != 0:
                     if inc2/inc1 >= confidence:
-                        for index in lista:
-                            if index not in s:
-                                m.append(index)
-                        #print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, s, m,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len(buckets) ))
-                        for item in range(len(s)):
-                            s[item] = getKeysByValue(dictionary_converter, s[item])
-                        for item2 in range(len(m)):
-                            m[item2] = getKeysByValue(dictionary_converter, m[item2])
-                        print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, s, m,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len(buckets) ))
-
-
-
+                        for index in fr_item:
+                            if index not in left:
+                                rigth.append(index)
+                        #print("Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, left, rigth,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len_buckets ))
+                        for item in range(0, len(left)):
+                            left[item] = getKeysByValue(dictionary_converter, left[item])
+                        for item2 in range(0, len(rigth)):
+                            rigth[item2] = getKeysByValue(dictionary_converter, rigth[item2])
+                        out = "Rule#  %d : %s ==> %s Confidence:%d Interest:%d " % (num, left, rigth,  100*inc2/inc1, 100*inc2/inc1 - 100*inc1/len_buckets )
+                        print(out)
+                        rules_apped_file.write(out + '\n')
                         num += 1
 
-if __name__ == "__main__":
-    #if os.path.exists(sys.argv[2]):
-        #shutil.rmtree(sys.argv[2])
-    #apriori(SparkContext(appName="Spark Apriori"), sys.argv[1], sys.argv[2], float(sys.argv[3]))
-    #apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/norm-groceries.txt", "./result/test", 50)
 
-    # Rule generation part
-    generate_association_rules("./outData/norm-groceries.txt", "./outData/rules-numbers.txt", "./outData/norm-dict.txt", 0.7)
+input_csv_file     = "./outData/norm-groceries.csv"
+output_freqitemset = "./outData/frequent_items_spark.txt"
+dictionary_file    = "./outData/norm-dict.txt"
+rules_out_file     = "./outData/rules.txt"
+
+# Clear output file content
+ftmp = open(output_freqitemset, 'w')
+ftmp.close()
+
+
+support = 50
+confidence = 0.4
+
+# Apriori in Spark
+sc = SparkContext(appName="Spark Apriori Most Frequent Items")
+apriori(sc, input_csv_file, output_freqitemset, support)
+
+# Rule generation part
+generate_association_rules(None, input_csv_file, output_freqitemset, dictionary_file, rules_out_file, confidence)
