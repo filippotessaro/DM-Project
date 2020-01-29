@@ -64,11 +64,11 @@ def apriori(sc, f_input, f_output, min_sup):
         c_k = generate_next_c([set(item) for item in map(lambda x: x[0], f_k)], k)
 
     # Remove Old Dir
-    isFile = os.path.isdir('./result/')
+    '''isFile = os.path.isdir('./result/')
     if isFile:
         shutil.rmtree('./result/')
     # Save to File
-    sc.parallelize(frequent_itemset, numSlices=1).saveAsTextFile(f_output)
+    sc.parallelize(frequent_itemset, numSlices=1).saveAsTextFile(f_output)'''
     sc.stop()
 
 def findsubsets(S,m):
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     #if os.path.exists(sys.argv[2]):
         #shutil.rmtree(sys.argv[2])
     #apriori(SparkContext(appName="Spark Apriori"), sys.argv[1], sys.argv[2], float(sys.argv[3]))
-    #apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/test.txt", "./result/test", 100)
+    #apriori(SparkContext(appName="Spark Apriori Most Frequent Items"), "./outData/norm-groceries.txt", "./result/test", 50)
 
     # Rule generation part
-    generate_association_rules("./outData/test.txt", "./outData/rules-numbers.txt", "./outData/dict.txt", 0.5)
+    generate_association_rules("./outData/norm-groceries.txt", "./outData/rules-numbers.txt", "./outData/norm-dict.txt", 0.7)
