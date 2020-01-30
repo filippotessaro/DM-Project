@@ -1,0 +1,270 @@
+1;['yogurt'];['whole milk'];0.40160349854227406;0.2621159019582968
+2;['butter'];['whole milk'];0.4972477064220184;0.44183900369733353
+3;['chicken'];['whole milk'];0.4099526066350711;0.3670489872776087
+4;['sugar'];['whole milk'];0.4444444444444444;0.41058921874293974
+5;['process chees'];['whole milk'];0.4233128834355828;0.40674110629040183
+6;['root veget'];['whole milk'];0.44869402985074625;0.33970663660145795
+7;['whippedsour cream'];['whole milk'];0.44964539007092197;0.37796991223440307
+8;['domest egg'];['whole milk'];0.47275641025641024;0.4093159873202573
+9;['hard chees'];['whole milk'];0.4107883817427386;0.3862865517305385
+10;['ham'];['whole milk'];0.44140625;0.41537940982106547
+11;['frozen veget'];['whole milk'];0.4249471458773784;0.3768584919530189
+12;['soft chees'];['whole milk'];0.44047619047619047;0.42339607660876466
+13;['margarin'];['whole milk'];0.4131944444444444;0.35463405404184173
+14;['semifinish bread'];['whole milk'];0.40229885057471265;0.3846087326405931
+15;['tropic fruit'];['whole milk'];0.40310077519379844;0.29818007572246863
+16;['cream chees'];['whole milk'];0.4153846153846154;0.37573435104951985
+17;['pot plant'];['whole milk'];0.4;0.38271655144367633
+18;['white bread'];['whole milk'];0.4057971014492754;0.3637068208474047
+19;['flour'];['whole milk'];0.4853801169590643;0.4679950010582916
+20;['curd'];['whole milk'];0.4904580152671756;0.43718432677591895
+21;['beef'];['whole milk'];0.4050387596899225;0.3525784099542576
+22;['butter milk'];['whole milk'];0.41454545454545455;0.38658693482198975
+23;['deterg'];['whole milk'];0.4656084656084656;0.44639333750761157
+24;['hamburg meat'];['whole milk'];0.4434250764525994;0.41017985481778846
+25;['bake powder'];['whole milk'];0.5229885057471264;0.5052983878130068
+26;['oil'];['whole milk'];0.40217391304347827;0.37411372597556447
+27;['herb'];['whole milk'];0.475;0.4587332248881659
+28;['slice chees'];['whole milk'];0.43983402489626555;0.4153321948840655
+29;['pasta'];['whole milk'];0.40540540540540543;0.3903586384269589
+30;['cake bar'];['whole milk'];0.4230769230769231;0.40986016829855787
+31;['mustard'];['whole milk'];0.4322033898305085;0.42020664318553086
+32;['chicken'];['veget'];0.41706161137440756;0.37415799201694516
+33;['root veget'];['veget'];0.43470149253731344;0.3257140992880251
+34;['herb'];['root veget'];0.43125;0.41498322488816597
+35;['whippedsour cream'];['veget'];0.40283687943262414;0.33116140159610524
+36;['onion'];['veget'];0.45901639344262296;0.42800785338568925
+37;['soft chees'];['veget'];0.4166666666666667;0.3995865527992409
+38;['hamburg meat'];['veget'];0.41590214067278286;0.38265691903797194
+39;['grape'];['veget'];0.40454545454545454;0.3821786387666827
+40;['bake powder'];['veget'];0.41379310344827586;0.3961029855141563
+41;['herb'];['veget'];0.475;0.4587332248881659
+42;['coffe', 'yogurt'];['whole milk'];0.5208333333333334;0.5110732682662329
+43;['veget', 'coffe'];['whole milk'];0.4772727272727273;0.46385263780546415
+44;['yogurt', 'citru fruit'];['whole milk'];0.47417840375586856;0.45252325938823945
+45;['yogurt', 'tropic fruit'];['whole milk'];0.5173611111111112;0.48808091590980984
+46;['yogurt', 'bottl water'];['whole milk'];0.42035398230088494;0.3973771624554193
+47;['pip fruit', 'yogurt'];['whole milk'];0.5310734463276836;0.5130783263602171
+48;['pip fruit', 'yogurt'];['veget'];0.4519774011299435;0.43398228116247706
+49;['butter', 'yogurt'];['whole milk'];0.6388888888888888;0.6242487912882382
+50;['rollsbun', 'yogurt'];['whole milk'];0.4526627218934911;0.4182991594697416
+51;['newspap', 'yogurt'];['whole milk'];0.4304635761589404;0.41511180714714696
+52;['fruitveget juic', 'yogurt'];['whole milk'];0.5054347826086957;0.4867279912300865
+53;['fruitveget juic', 'yogurt'];['veget'];0.44021739130434784;0.42151059992573864
+54;['pastri', 'yogurt'];['whole milk'];0.5172413793103449;0.4995512613762253
+55;['root veget', 'yogurt'];['whole milk'];0.562992125984252;0.5371686204942153
+56;['brown bread', 'yogurt'];['whole milk'];0.48951048951048953;0.4749720592542878
+57;['napkin', 'yogurt'];['whole milk'];0.49586776859504134;0.4835660199167168
+58;['whippedsour cream', 'yogurt'];['whole milk'];0.5245098039215687;0.5037696656539802
+59;['whippedsour cream', 'tropic fruit'];['yogurt'];0.4485294117647059;0.43470265291964694
+60;['whippedsour cream', 'yogurt'];['veget'];0.49019607843137253;0.46945594016378406
+61;['domest egg', 'yogurt'];['whole milk'];0.5390070921985816;0.5246719966312777
+62;['domest egg', 'yogurt'];['veget'];0.40425531914893614;0.38992022358163236
+63;['frozen veget', 'yogurt'];['whole milk'];0.4918032786885246;0.4793998626657511
+64;['margarin', 'yogurt'];['whole milk'];0.4928571428571429;0.47862371463428804
+65;['margarin', 'yogurt'];['veget'];0.4;0.3857665717771452
+66;['cream chees', 'whole milk'];['yogurt'];0.4012345679012346;0.3847644581005026
+67;['cream chees', 'yogurt'];['whole milk'];0.5327868852459017;0.5203834692231282
+68;['veget', 'yogurt'];['whole milk'];0.5128805620608899;0.46946860598118273
+69;['butter', 'yogurt'];['veget'];0.4375;0.42285990239934934
+70;['root veget', 'yogurt'];['veget'];0.5;0.4741764945099634
+71;['frozen veget', 'yogurt'];['veget'];0.4262295081967213;0.4138260921739478
+72;['yogurt', 'tropic fruit'];['veget'];0.4201388888888889;0.3908586936875876
+73;['cream chees', 'yogurt'];['veget'];0.4262295081967213;0.4138260921739478
+74;['beef', 'yogurt'];['veget'];0.4434782608695652;0.43178651625793446
+75;['bottl beer', 'yogurt'];['whole milk'];0.5604395604395604;0.5511878320947048
+76;['curd', 'yogurt'];['whole milk'];0.5823529411764706;0.5650694926201469
+77;['curd', 'tropic fruit'];['yogurt'];0.5148514851485149;0.5045830833591696
+78;['beef', 'yogurt'];['whole milk'];0.5217391304347826;0.5100473858231519
+79;['frankfurt', 'yogurt'];['whole milk'];0.5545454545454546;0.5433620466560687
+80;['sausag', 'yogurt'];['whole milk'];0.44559585492227977;0.4259740574436299
+81;['sausag', 'yogurt'];['veget'];0.41450777202072536;0.3948859745420755
+82;['pip fruit', 'rollsbun'];['whole milk'];0.44525547445255476;0.4313270482630468
+83;['pip fruit', 'pastri'];['whole milk'];0.47619047619047616;0.46551540502333505
+84;['pip fruit', 'root veget'];['whole milk'];0.5751633986928104;0.5596082949921191
+85;['pip fruit', 'whippedsour cream'];['whole milk'];0.6483516483516484;0.6390999200067927
+86;['pip fruit', 'domest egg'];['whole milk'];0.6235294117647059;0.614887687486544
+87;['pip fruit', 'tropic fruit'];['whole milk'];0.4129353233830846;0.39250018714884305
+88;['pip fruit', 'whole milk'];['veget'];0.44932432432432434;0.41923079036743127
+89;['pip fruit', 'veget'];['whole milk'];0.5175097276264592;0.4913812201030757
+90;['pip fruit', 'sausag'];['whole milk'];0.5188679245283019;0.5080911860167118
+91;['butter', 'root veget'];['whole milk'];0.6377952755905512;0.6248835228455328
+92;['butter', 'citru fruit'];['whole milk'];0.5555555555555556;0.5464054945551489
+93;['butter', 'tropic fruit'];['whole milk'];0.6224489795918368;0.6124855798358384
+94;['butter', 'bottl water'];['whole milk'];0.6022727272727273;0.5933260009612186
+95;['butter', 'rollsbun'];['whole milk'];0.49242424242424243;0.4790041529569793
+96;['rollsbun', 'chicken'];['whole milk'];0.5473684210526316;0.5377100233299801
+97;['rollsbun', 'root veget'];['whole milk'];0.5230125523012552;0.49871405697795307
+98;['rollsbun', 'citru fruit'];['whole milk'];0.4303030303030303;0.4135279184689514
+99;['rollsbun', 'tropic fruit'];['whole milk'];0.4462809917355372;0.42167749437888813
+100;['rollsbun', 'beef'];['whole milk'];0.5;0.486376575843839
+101;['rollsbun', 'pork'];['whole milk'];0.5495495495495496;0.5382644743157147
+102;['soda', 'root veget'];['whole milk'];0.4371584699453552;0.418553345911195
+103;['chicken', 'root veget'];['whole milk'];0.5514018691588785;0.5405234633028394
+104;['sugar', 'whole milk'];['veget'];0.4189189189189189;0.4038721519404724
+105;['sugar', 'veget'];['whole milk'];0.5849056603773585;0.5741289218657684
+106;['newspap', 'root veget'];['whole milk'];0.504424778761062;0.49293636883832914
+107;['newspap', 'tropic fruit'];['whole milk'];0.43103448275862066;0.41924107080254097
+108;['newspap', 'veget'];['whole milk'];0.43157894736842106;0.4122621519231181
+109;['fruitveget juic', 'root veget'];['whole milk'];0.5423728813559322;0.5303761347109546
+110;['fruitveget juic', 'tropic fruit'];['whole milk'];0.43703703703703706;0.42331194553642704
+111;['fruitveget juic', 'veget'];['whole milk'];0.4975845410628019;0.47653940076186657
+112;['fruitveget juic', 'bottl water'];['whole milk'];0.40714285714285714;0.3929094289200023
+113;['rollsbun', 'pastri'];['whole milk'];0.4077669902912621;0.38682351733477577
+114;['pastri', 'root veget'];['whole milk'];0.5185185185185185;0.5075384453180305
+115;['pastri', 'tropic fruit'];['whole milk'];0.5076923076923077;0.49447555291394246
+116;['root veget', 'citru fruit'];['whole milk'];0.5172413793103449;0.4995512613762253
+117;['root veget', 'tropic fruit'];['whole milk'];0.5700483091787439;0.5490031688778086
+118;['root veget', 'bottl water'];['whole milk'];0.4675324675324675;0.4518756964873272
+119;['root veget', 'beef'];['whole milk'];0.4619883040935672;0.44460318819279454
+120;['root veget', 'shop bag'];['whole milk'];0.4126984126984127;0.39988832729784335
+121;['root veget', 'pork'];['whole milk'];0.5;0.486376575843839
+122;['brown bread', 'rollsbun'];['whole milk'];0.41935483870967744;0.40674808799800605
+123;['brown bread', 'soda'];['whole milk'];0.4032258064516129;0.3906190557399415
+124;['brown bread', 'root veget'];['whole milk'];0.56;0.5498332655551037
+125;['brown bread', 'tropic fruit'];['whole milk'];0.5333333333333333;0.5226582621661922
+126;['brown bread', 'veget'];['whole milk'];0.5;0.4812932086213908
+127;['napkin', 'rollsbun'];['whole milk'];0.45217391304347826;0.4404821684318475
+128;['napkin', 'veget'];['whole milk'];0.47183098591549294;0.4573942230037402
+129;['whippedsour cream', 'butter'];['whole milk'];0.66;0.6498332655551037
+130;['whippedsour cream', 'rollsbun'];['whole milk'];0.5347222222222222;0.5200821246215716
+131;['whippedsour cream', 'soda'];['whole milk'];0.47368421052631576;0.46209413325913395
+132;['whippedsour cream', 'root veget'];['whole milk'];0.5535714285714286;0.5364913147040028
+133;['whippedsour cream', 'domest egg'];['whole milk'];0.5714285714285714;0.561465171672573
+134;['whippedsour cream', 'citru fruit'];['whole milk'];0.5794392523364486;0.5685608464804095
+135;['whippedsour cream', 'tropic fruit'];['whole milk'];0.5735294117647058;0.5597026529196468
+136;['whippedsour cream', 'whole milk'];['veget'];0.45425867507886436;0.4220301268885431
+137;['whippedsour cream', 'veget'];['whole milk'];0.5070422535211268;0.47816872769762125
+138;['domest egg', 'butter'];['whole milk'];0.6210526315789474;0.6113942338562959
+139;['domest egg', 'rollsbun'];['whole milk'];0.42207792207792205;0.40642115103278176
+140;['domest egg', 'soda'];['whole milk'];0.4180327868852459;0.4056293708624724
+141;['domest egg', 'root veget'];['whole milk'];0.5957446808510638;0.58140958528376
+142;['domest egg', 'citru fruit'];['whole milk'];0.5490196078431373;0.5386495387093431
+143;['domest egg', 'tropic fruit'];['whole milk'];0.6071428571428571;0.5957561145645732
+144;['domest egg', 'whole milk'];['veget'];0.4101694915254237;0.38017762491297963
+145;['domest egg', 'veget'];['whole milk'];0.5525114155251142;0.5302462670907913
+146;['rollsbun', 'frozen veget'];['whole milk'];0.5;0.4898332655551037
+147;['frozen veget', 'root veget'];['whole milk'];0.5350877192982456;0.5234976420310639
+148;['margarin', 'rollsbun'];['whole milk'];0.5379310344827586;0.523189269537659
+149;['margarin', 'domest egg'];['whole milk'];0.6219512195121951;0.6136144972673802
+150;['margarin', 'veget'];['whole milk'];0.4690721649484536;0.44934870012535477
+151;['tropic fruit', 'citru fruit'];['whole milk'];0.45408163265306123;0.4341548331410645
+152;['bottl water', 'citru fruit'];['whole milk'];0.43609022556390975;0.42256846875219767
+153;['bottl water', 'tropic fruit'];['whole milk'];0.4340659340659341;0.4155624773762228
+154;['veget', 'butter'];['whole milk'];0.5736040609137056;0.55357559405726
+155;['butter', 'whole milk'];['veget'];0.41697416974169743;0.38942231939602845
+156;['veget', 'rollsbun'];['whole milk'];0.4200477326968974;0.37744911537278186
+157;['veget', 'chocol'];['whole milk'];0.432;0.4192915819438796
+158;['veget', 'soda'];['whole milk'];0.4254658385093168;0.3927289535967507
+159;['veget', 'chicken'];['whole milk'];0.4715909090909091;0.4536974564678916
+160;['chicken', 'whole milk'];['veget'];0.4797687861271676;0.462180335537497
+161;['veget', 'pastri'];['whole milk'];0.46846846846846846;0.44589831800079865
+162;['veget', 'root veget'];['whole milk'];0.4892703862660944;0.44189340375287767
+163;['root veget', 'whole milk'];['veget'];0.47401247401247404;0.4251104813325228
+164;['veget', 'hygien articl'];['whole milk'];0.5425531914893617;0.5329964611111592
+165;['hygien articl', 'whole milk'];['veget'];0.40476190476190477;0.39195181936133544
+166;['veget', 'frozen veget'];['whole milk'];0.5428571428571428;0.5250653575785743
+167;['frozen veget', 'whole milk'];['veget'];0.472636815920398;0.45220167968615643
+168;['veget', 'onion'];['whole milk'];0.4642857142857143;0.45005228606285946
+169;['onion', 'whole milk'];['veget'];0.5462184873949579;0.5341200734055314
+170;['veget', 'citru fruit'];['whole milk'];0.4507042253521127;0.4218306995286072
+171;['whole milk', 'citru fruit'];['veget'];0.4266666666666667;0.3961664633319778
+172;['veget', 'tropic fruit'];['whole milk'];0.47592067988668557;0.4400321072962016
+173;['whole milk', 'tropic fruit'];['veget'];0.40384615384615385;0.36155253855538527
+174;['cream chees', 'whole milk'];['veget'];0.4074074074074074;0.3909372976066754
+175;['veget', 'cream chees'];['whole milk'];0.4888888888888889;0.47516379738827885
+176;['long life bakeri product', 'whole milk'];['veget'];0.42105263157894735;0.40753087476723526
+177;['veget', 'long life bakeri product'];['whole milk'];0.5333333333333333;0.5226582621661922
+178;['veget', 'bottl beer'];['whole milk'];0.4716981132075472;0.45553300544016206
+179;['veget', 'bottl water'];['whole milk'];0.4344262295081967;0.40961939746264975
+180;['beef', 'whole milk'];['veget'];0.4354066985645933;0.41415822357476
+181;['veget', 'beef'];['whole milk'];0.4690721649484536;0.44934870012535477
+182;['hamburg meat', 'whole milk'];['veget'];0.42758620689655175;0.4128444419514521
+183;['veget', 'hamburg meat'];['whole milk'];0.45588235294117646;0.4420555940961175
+184;['veget', 'pork'];['whole milk'];0.4694835680751174;0.44782842370748827
+185;['whole milk', 'pork'];['veget'];0.45871559633027525;0.43655211524040133
+186;['white bread', 'veget'];['whole milk'];0.42962962962962964;0.4159045381290196
+187;['curd', 'rollsbun'];['whole milk'];0.5858585858585859;0.5757935187581386
+188;['curd', 'root veget'];['whole milk'];0.5700934579439252;0.5592150520878861
+189;['curd', 'whippedsour cream'];['whole milk'];0.5631067961165048;0.5526350596382616
+190;['curd', 'tropic fruit'];['whole milk'];0.6336633663366337;0.6233949645472884
+191;['curd', 'veget'];['whole milk'];0.5739644970414202;0.5567827158295454
+192;['frankfurt', 'root veget'];['whole milk'];0.5;0.4898332655551037
+193;['frankfurt', 'tropic fruit'];['whole milk'];0.5483870967741935;0.53893203374044
+194;['frankfurt', 'veget'];['whole milk'];0.46296296296296297;0.446492853162231
+195;['sausag', 'pastri'];['whole milk'];0.45528455284552843;0.442779469478306
+196;['sausag', 'root veget'];['whole milk'];0.5170068027210885;0.5020617030870909
+197;['sausag', 'whippedsour cream'];['whole milk'];0.5617977528089888;0.5527493591530311
+198;['sausag', 'tropic fruit'];['whole milk'];0.5182481751824818;0.5043197489929738
+199;['oil', 'veget'];['whole milk'];0.5102040816326531;0.5002406818766547
+200;['oil', 'whole milk'];['veget'];0.45045045045045046;0.4391653752166156
+201;['pip fruit', 'root veget'];['veget'];0.5228758169934641;0.5073207132927727
+202;['pip fruit', 'whippedsour cream'];['veget'];0.6043956043956044;0.5951438760507487
+203;['pip fruit', 'citru fruit'];['tropic fruit'];0.40441176470588236;0.3905850058608234
+204;['pip fruit', 'citru fruit'];['veget'];0.4264705882352941;0.41264382939023514
+205;['pip fruit', 'tropic fruit'];['veget'];0.4626865671641791;0.4422514309299376
+206;['whippedsour cream', 'butter'];['veget'];0.57;0.5598332655551036
+207;['rollsbun', 'butter'];['veget'];0.42424242424242425;0.4108223347751611
+208;['butter', 'root veget'];['veget'];0.5118110236220472;0.4988992708770289
+209;['butter', 'tropic fruit'];['veget'];0.5510204081632653;0.5410570084072669
+210;['whippedsour cream', 'rollsbun'];['veget'];0.4583333333333333;0.44369323573268266
+211;['rollsbun', 'root veget'];['veget'];0.502092050209205;0.47779355488590286
+212;['rollsbun', 'beef'];['veget'];0.4253731343283582;0.4117497101721972
+213;['rollsbun', 'pork'];['veget'];0.4954954954954955;0.4842104202616606
+214;['domest egg', 'soda'];['veget'];0.4098360655737705;0.397432649550997
+215;['soda', 'root veget'];['veget'];0.4426229508196721;0.4240178267855119
+216;['chicken', 'root veget'];['veget'];0.5233644859813084;0.5124860801252693
+217;['newspap', 'root veget'];['veget'];0.5221238938053098;0.510635483882577
+218;['fruitveget juic', 'root veget'];['veget'];0.5508474576271186;0.538850710982141
+219;['fruitveget juic', 'tropic fruit'];['veget'];0.48148148148148145;0.46775638998087143
+220;['pastri', 'root veget'];['veget'];0.5370370370370371;0.5260569638365491
+221;['whippedsour cream', 'root veget'];['veget'];0.5;0.4829198861325742
+222;['domest egg', 'root veget'];['veget'];0.5106382978723404;0.4963032023050366
+223;['margarin', 'root veget'];['veget'];0.5321100917431193;0.5210283511981824
+224;['frozen veget', 'root veget'];['veget'];0.5263157894736842;0.5147257122065024
+225;['root veget', 'onion'];['veget'];0.6021505376344086;0.5926954746006551
+226;['veget', 'onion'];['root veget'];0.4;0.3857665717771452
+227;['root veget', 'citru fruit'];['veget'];0.5862068965517241;0.5685167786176045
+228;['root veget', 'tropic fruit'];['veget'];0.5845410628019324;0.5634959225009971
+229;['root veget', 'bottl water'];['veget'];0.44805194805194803;0.43239517700680774
+230;['root veget', 'beef'];['veget'];0.45614035087719296;0.43875523497642027
+231;['veget', 'beef'];['root veget'];0.4020618556701031;0.3823383908470043
+232;['root veget', 'shop bag'];['veget'];0.5158730158730159;0.5030629304724465
+233;['root veget', 'pork'];['veget'];0.5149253731343284;0.5013019489781674
+234;['curd', 'root veget'];['veget'];0.5046728971962616;0.4937944913402226
+235;['sausag', 'root veget'];['veget'];0.4557823129251701;0.44083721329117254
+236;['whippedsour cream', 'domest egg'];['veget'];0.5102040816326531;0.5002406818766547
+237;['whippedsour cream', 'citru fruit'];['veget'];0.5233644859813084;0.5124860801252693
+238;['whippedsour cream', 'tropic fruit'];['veget'];0.5661764705882353;0.5523497117431763
+239;['tropic fruit', 'citru fruit'];['veget'];0.45408163265306123;0.4341548331410645
+240;['curd', 'tropic fruit'];['veget'];0.5148514851485149;0.5045830833591696
+241;['sausag', 'tropic fruit'];['veget'];0.4306569343065693;0.4167285081170614
+242;['sausag', 'bottl water'];['veget'];0.423728813559322;0.4117320669143444
+243;['pip fruit', 'veget', 'yogurt'];['whole milk'];0.625;0.6168666124440829
+244;['pip fruit', 'whole milk', 'yogurt'];['veget'];0.5319148936170213;0.5223581632388188
+245;['fruitveget juic', 'whole milk', 'yogurt'];['veget'];0.5376344086021505;0.528179345568397
+246;['fruitveget juic', 'veget', 'whole milk'];['yogurt'];0.4854368932038835;0.4749651567256403
+247;['fruitveget juic', 'veget', 'yogurt'];['whole milk'];0.6172839506172839;0.6090488957169179
+248;['root veget', 'yogurt', 'tropic fruit'];['whole milk'];0.7;0.6918666124440829
+249;['root veget', 'whole milk', 'tropic fruit'];['yogurt'];0.4745762711864407;0.46257952454146306
+250;['whippedsour cream', 'whole milk', 'yogurt'];['veget'];0.514018691588785;0.5031402857327459
+251;['whippedsour cream', 'veget', 'yogurt'];['whole milk'];0.55;0.5398332655551037
+252;['veget', 'yogurt', 'tropic fruit'];['whole milk'];0.6198347107438017;0.6075329620654771
+253;['yogurt', 'whole milk', 'tropic fruit'];['veget'];0.5033557046979866;0.48820727037509115
+254;['veget', 'whole milk', 'tropic fruit'];['yogurt'];0.44642857142857145;0.42934845756114565
+255;['veget', 'rollsbun', 'yogurt'];['whole milk'];0.5221238938053098;0.510635483882577
+256;['veget', 'root veget', 'yogurt'];['whole milk'];0.6062992125984252;0.5933874598534069
+257;['root veget', 'whole milk', 'yogurt'];['veget'];0.5384615384615384;0.5239231082053367
+258;['pip fruit', 'veget', 'root veget'];['whole milk'];0.675;0.666866612444083
+259;['pip fruit', 'root veget', 'whole milk'];['veget'];0.6136363636363636;0.6046896373248549
+260;['pip fruit', 'veget', 'whole milk'];['root veget'];0.40601503759398494;0.39249328078227286
+261;['whippedsour cream', 'veget', 'root veget'];['whole milk'];0.6071428571428571;0.5986028002091442
+262;['whippedsour cream', 'root veget', 'whole milk'];['veget'];0.5483870967741935;0.53893203374044
+263;['veget', 'rollsbun', 'root veget'];['whole milk'];0.5083333333333333;0.49613325199945774
+264;['rollsbun', 'whole milk', 'root veget'];['veget'];0.488;0.4752915819438796
+265;['veget', 'whole milk', 'citru fruit'];['root veget'];0.4453125;0.43229907991053274
+266;['root veget', 'whole milk', 'citru fruit'];['veget'];0.6333333333333333;0.6241832723329266
+267;['veget', 'root veget', 'citru fruit'];['whole milk'];0.5588235294117647;0.5484534602779705
+268;['veget', 'whole milk', 'tropic fruit'];['root veget'];0.4107142857142857;0.3936341718468599
+269;['root veget', 'whole milk', 'tropic fruit'];['veget'];0.5847457627118644;0.5727490160668868
+270;['veget', 'root veget', 'tropic fruit'];['whole milk'];0.5702479338842975;0.5579461852059729

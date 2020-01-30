@@ -1,0 +1,30 @@
+\section{Clusters and Graphs}
+The following part aims to identify the trips’ categories via ML Clustering, creating different profiles for each category.
+Our approach here is to implement a clustering algorithm, in particular, the K Means clustering technique, to identify different categories of trips correlated by similar features. A feature is a parameter, a column of our data set which depends on the data type of the last one (Integers, Floating point numbers, Strings and so on).
+Once, generated all the different clusters, we have created a graph which represents all our clusters and all the trips between the different macro areas.
+
+\subsubsection{Kmeans in Literature }
+K-means is one of the simplest unsupervised learning algorithms to solve clustering problems \cite{website:kmeansmedium}. The procedure follows a simple and easy way to classify a given data set through a certain number of clusters. The main idea is to define k centers, one for each cluster.
+The K-means clustering algorithm is used to find groups which have not been explicitly labeled in the data and to find patterns and make better decisions. Once the algorithm has been run and the groups are defined, any new data can be easily assigned to the most relevant group.
+
+To start with the k-means algorithm, we have to randomly initialise points called the cluster centroids (K). K-means is an iterative algorithm and it does two steps:
+\begin{itemize}
+    \item \textbf{Cluster assignment:} the algorithm goes through each of the data points and depending on which cluster is closer, It assigns the data points to one of the three cluster centroids.
+    \item \textbf{Move centroid:} here, K-means moves the centroids to the average of the points in a cluster. In other words, the algorithm calculates the average of all the points in a cluster and moves the centroid to that average location. This process is repeated until there is no change in the clusters (or possibly until some other stopping condition is met). K is chosen randomly or by giving specific initial starting points by the user.
+\end{itemize}
+
+
+\subsubsection{Best K Estimation - Elbow Method}
+The algorithm groups the data into k different clusters, even if k is not the right number of clusters to use \cite{website:elbow}. One method to validate the number of clusters is the elbow method. The idea of the elbow method is to run k-means clustering on the data set for a range of values of k (say, k from 1 to 10), and for each value of k, compute the sum of squared errors (SSE).
+\begin{align}
+     WCSS(K) = \sum_{j=1}^{k}  \sum_{x_i \epsilon clusterj}\left \| x_i-\bar{x_j} \right \|^{2}
+\end{align}
+
+Then, plot all the SSE (related to each K) in a line chart line chart. If the line chart looks like an arm, then the "elbow" on the arm is the value of k that is the best.
+The main idea is that we want a small SSE, but that the SSE tends to decrease toward 0 as we increase k (the SSE is 0 when k is equal to the number of data points in the data set, because then each data point is its own cluster, and there is no error between it and the center of its cluster).
+
+
+%-----------------------------------------------------------------------
+\subsection{PCA \- Principal Component Analysis}
+%DA RISCRIVERE%
+Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entities each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components. This transformation is defined in such a way that the first principal component has the largest possible variance (that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components. The resulting vectors (each being a linear combination of the variables and containing n observations) are an uncorrelated orthogonal basis set. PCA is sensitive to the relative scaling of the original variables.
