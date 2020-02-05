@@ -8,10 +8,12 @@ from pyspark import SparkContext
 import itertools
 import findspark
 import os
+import argparse
+
 
 # To be compatible with one OS
-java8_location= '/usr/lib/jvm/java-8-openjdk-amd64' # Set your own
-os.environ['JAVA_HOME'] = java8_location
+#java8_location= '/usr/lib/jvm/java-8-openjdk-amd64' # Set your own
+#os.environ['JAVA_HOME'] = java8_location
 # -----------------------------------------------
 
 def generate_next_c(f_k, k):
@@ -190,10 +192,33 @@ def generate_association_rules(sc, in_file_name, freq_items_file, saved_dict_fil
                         num += 1
 
 
-input_csv_file     = "../Data/groceries_int.csv"
+# Construct the argument parser
+ap = argparse.ArgumentParser()
+
+# Add the arguments to the parser
+ap.add_argument("-a", "--input_csv_file", required=True,
+   help="input csv file normalized")
+ap.add_argument("-b", "--output_freqitemset", required=True,
+   help="output freqitemset txt file")
+ap.add_argument("-c", "--dictionary_file", required=True,
+   help="output freqitemset txt file")
+ap.add_argument("-d", "--rules_out_file", required=True,
+   help="output freqitemset txt file")
+ap.add_argument("-sup", "--support", required=True,
+   help="support of freq Items")
+ap.add_argument("-conf", "--confidence", required=True,
+   help="confidence of generated rules")
+args = vars(ap.parse_args())
+
+'''input_csv_file     = "../Data/groceries_int.csv"
 output_freqitemset = "../Data/frequent_itemsets.txt"
 dictionary_file    = "../Data/normalized_dictionary.txt"
-rules_out_file     = "../Data/association_rules.txt"
+rules_out_file     = "../Data/association_rules.txt"'''
+
+input_csv_file     = args['input_csv_file']
+output_freqitemset = args['output_freqitemset']
+dictionary_file    = args['dictionary_file']
+rules_out_file     = args['rules_out_file']
 
 # Clear output file content
 ftmp = open(output_freqitemset, 'w')
@@ -202,8 +227,11 @@ ftmp.close()
 sc = SparkContext(appName="Spark Apriori Most Frequent Items")
 
 # The suppurt is expressed in %
-support = 50
-confidence = 0.4
+'''support = 50
+confidence = 0.4'''
+
+support = int(args['support'])
+confidence = float(args['confidence'])
 
 # Apriori in Spark
 apriori(sc, input_csv_file, output_freqitemset, support)
