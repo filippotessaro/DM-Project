@@ -1,0 +1,1001 @@
+coffe
+yogurt
+whole milk
+pip fruit
+butter
+rice
+rollsbun
+cereal
+chocol
+soda
+chicken
+sugar
+newspap
+fruitveget juic
+specialti bar
+pastri
+process chees
+root veget
+brown bread
+napkin
+hygien articl
+spice
+berri
+whippedsour cream
+dessert
+zwieback
+domest egg
+spread chees
+hard chees
+ham
+pickl veget
+chew gum
+frozen veget
+can fish
+season product
+curd chees
+onion
+white wine
+photofilm
+soften
+cling filmbag
+soft chees
+popcorn
+specialti chees
+finish product
+frozen fish
+femal sanitari product
+liquor
+pet care
+soup
+sauc
+vinegar
+mayonnais
+kitchen towel
+jam
+margarin
+semifinish bread
+citru fruit
+tropic fruit
+cream chees
+veget
+condens milk
+long life bakeri product
+liquor appet
+bottl beer
+uhtmilk
+pot plant
+white bread
+bottl water
+dish
+flour
+curd
+beef
+frankfurt
+packag fruitveget
+butter milk
+deterg
+salti snack
+frozen dessert
+candi
+sweet spread
+waffl
+can beer
+sausag
+shop bag
+beverag
+hamburg meat
+pork
+grape
+misc beverag
+cat food
+bake powder
+turkey
+chocol marshmallow
+oil
+ice cream
+redblush wine
+frozen potato product
+flower seed
+candl
+specialti chocol
+sparkl wine
+salt
+frozen meal
+can veget
+herb
+slice chees
+pasta
+instant food product
+dental care
+cake bar
+dog food
+cleaner
+dish cleaner
+meat
+mustard
+hous keep product
+instant coffe
+roll product
+liver loaf
+coffe,yogurt
+whole milk,coffe
+pip fruit,coffe
+rollsbun,coffe
+soda,coffe
+fruitveget juic,coffe
+pastri,coffe
+root veget,coffe
+whippedsour cream,coffe
+coffe,citru fruit
+coffe,tropic fruit
+veget,coffe
+coffe,bottl water
+frankfurt,coffe
+sausag,coffe
+shop bag,coffe
+whole milk,yogurt
+pip fruit,yogurt
+butter,yogurt
+rollsbun,yogurt
+yogurt,chocol
+soda,yogurt
+chicken,yogurt
+sugar,yogurt
+newspap,yogurt
+fruitveget juic,yogurt
+pastri,yogurt
+root veget,yogurt
+brown bread,yogurt
+napkin,yogurt
+hygien articl,yogurt
+berri,yogurt
+whippedsour cream,yogurt
+dessert,yogurt
+domest egg,yogurt
+hard chees,yogurt
+ham,yogurt
+frozen veget,yogurt
+onion,yogurt
+soft chees,yogurt
+margarin,yogurt
+yogurt,citru fruit
+yogurt,tropic fruit
+cream chees,yogurt
+veget,yogurt
+long life bakeri product,yogurt
+bottl beer,yogurt
+uhtmilk,yogurt
+white bread,yogurt
+yogurt,bottl water
+curd,yogurt
+beef,yogurt
+frankfurt,yogurt
+butter milk,yogurt
+salti snack,yogurt
+candi,yogurt
+waffl,yogurt
+can beer,yogurt
+sausag,yogurt
+shop bag,yogurt
+yogurt,beverag
+hamburg meat,yogurt
+yogurt,pork
+cat food,yogurt
+oil,yogurt
+frozen meal,yogurt
+slice chees,yogurt
+meat,yogurt
+pip fruit,whole milk
+butter,whole milk
+rollsbun,whole milk
+whole milk,chocol
+soda,whole milk
+chicken,whole milk
+sugar,whole milk
+newspap,whole milk
+fruitveget juic,whole milk
+specialti bar,whole milk
+pastri,whole milk
+process chees,whole milk
+root veget,whole milk
+brown bread,whole milk
+napkin,whole milk
+hygien articl,whole milk
+berri,whole milk
+whippedsour cream,whole milk
+dessert,whole milk
+domest egg,whole milk
+hard chees,whole milk
+ham,whole milk
+pickl veget,whole milk
+chew gum,whole milk
+frozen veget,whole milk
+onion,whole milk
+soft chees,whole milk
+margarin,whole milk
+semifinish bread,whole milk
+whole milk,citru fruit
+whole milk,tropic fruit
+cream chees,whole milk
+veget,whole milk
+long life bakeri product,whole milk
+bottl beer,whole milk
+pot plant,whole milk
+white bread,whole milk
+whole milk,bottl water
+dish,whole milk
+flour,whole milk
+curd,whole milk
+beef,whole milk
+frankfurt,whole milk
+butter milk,whole milk
+whole milk,deterg
+salti snack,whole milk
+candi,whole milk
+waffl,whole milk
+can beer,whole milk
+sausag,whole milk
+shop bag,whole milk
+whole milk,beverag
+hamburg meat,whole milk
+whole milk,pork
+grape,whole milk
+whole milk,misc beverag
+cat food,whole milk
+whole milk,bake powder
+oil,whole milk
+whole milk,ice cream
+specialti chocol,whole milk
+frozen meal,whole milk
+whole milk,herb
+slice chees,whole milk
+pasta,whole milk
+cake bar,whole milk
+meat,whole milk
+mustard,whole milk
+pip fruit,butter
+pip fruit,rollsbun
+pip fruit,chocol
+pip fruit,soda
+pip fruit,newspap
+pip fruit,fruitveget juic
+pip fruit,pastri
+pip fruit,root veget
+pip fruit,brown bread
+pip fruit,napkin
+pip fruit,whippedsour cream
+pip fruit,domest egg
+pip fruit,frozen veget
+pip fruit,margarin
+pip fruit,citru fruit
+pip fruit,tropic fruit
+pip fruit,cream chees
+pip fruit,veget
+pip fruit,bottl beer
+pip fruit,white bread
+pip fruit,bottl water
+pip fruit,curd
+pip fruit,frankfurt
+pip fruit,butter milk
+pip fruit,sausag
+pip fruit,shop bag
+pip fruit,pork
+rollsbun,butter
+butter,chocol
+soda,butter
+butter,chicken
+newspap,butter
+fruitveget juic,butter
+pastri,butter
+butter,root veget
+brown bread,butter
+whippedsour cream,butter
+domest egg,butter
+frozen veget,butter
+margarin,butter
+butter,citru fruit
+butter,tropic fruit
+veget,butter
+butter,bottl beer
+butter,bottl water
+curd,butter
+butter,beef
+sausag,butter
+butter,pork
+rollsbun,chocol
+soda,rollsbun
+rollsbun,chicken
+sugar,rollsbun
+newspap,rollsbun
+fruitveget juic,rollsbun
+specialti bar,rollsbun
+pastri,rollsbun
+rollsbun,root veget
+brown bread,rollsbun
+napkin,rollsbun
+rollsbun,hygien articl
+rollsbun,berri
+whippedsour cream,rollsbun
+rollsbun,dessert
+domest egg,rollsbun
+rollsbun,hard chees
+rollsbun,ham
+frozen veget,rollsbun
+rollsbun,onion
+soft chees,rollsbun
+margarin,rollsbun
+rollsbun,citru fruit
+rollsbun,tropic fruit
+rollsbun,cream chees
+veget,rollsbun
+rollsbun,long life bakeri product
+rollsbun,bottl beer
+rollsbun,uhtmilk
+white bread,rollsbun
+rollsbun,bottl water
+curd,rollsbun
+rollsbun,beef
+frankfurt,rollsbun
+rollsbun,butter milk
+candi,rollsbun
+waffl,rollsbun
+can beer,rollsbun
+sausag,rollsbun
+rollsbun,shop bag
+rollsbun,beverag
+rollsbun,hamburg meat
+rollsbun,pork
+oil,rollsbun
+specialti chocol,rollsbun
+slice chees,rollsbun
+meat,rollsbun
+soda,chocol
+newspap,chocol
+fruitveget juic,chocol
+pastri,chocol
+root veget,chocol
+chocol,citru fruit
+chocol,tropic fruit
+veget,chocol
+long life bakeri product,chocol
+chocol,bottl water
+waffl,chocol
+sausag,chocol
+shop bag,chocol
+soda,chicken
+sugar,soda
+newspap,soda
+fruitveget juic,soda
+specialti bar,soda
+pastri,soda
+process chees,soda
+soda,root veget
+brown bread,soda
+napkin,soda
+soda,hygien articl
+soda,berri
+whippedsour cream,soda
+soda,dessert
+domest egg,soda
+chew gum,soda
+frozen veget,soda
+soda,onion
+margarin,soda
+soda,citru fruit
+soda,tropic fruit
+soda,cream chees
+veget,soda
+soda,long life bakeri product
+soda,bottl beer
+soda,uhtmilk
+white bread,soda
+soda,bottl water
+curd,soda
+soda,beef
+frankfurt,soda
+salti snack,soda
+candi,soda
+waffl,soda
+can beer,soda
+sausag,soda
+soda,shop bag
+soda,hamburg meat
+soda,pork
+soda,misc beverag
+soda,ice cream
+specialti chocol,soda
+frozen meal,soda
+slice chees,soda
+meat,soda
+newspap,chicken
+chicken,root veget
+whippedsour cream,chicken
+domest egg,chicken
+frozen veget,chicken
+chicken,citru fruit
+chicken,tropic fruit
+veget,chicken
+chicken,bottl water
+sausag,chicken
+chicken,pork
+sugar,pastri
+sugar,root veget
+sugar,margarin
+sugar,veget
+fruitveget juic,newspap
+newspap,pastri
+newspap,root veget
+newspap,brown bread
+newspap,napkin
+newspap,whippedsour cream
+newspap,domest egg
+margarin,newspap
+newspap,citru fruit
+newspap,tropic fruit
+newspap,veget
+newspap,bottl water
+curd,newspap
+newspap,beef
+sausag,newspap
+newspap,shop bag
+newspap,pork
+fruitveget juic,pastri
+fruitveget juic,root veget
+fruitveget juic,brown bread
+fruitveget juic,napkin
+fruitveget juic,whippedsour cream
+fruitveget juic,dessert
+fruitveget juic,domest egg
+fruitveget juic,frozen veget
+fruitveget juic,margarin
+fruitveget juic,citru fruit
+fruitveget juic,tropic fruit
+fruitveget juic,cream chees
+fruitveget juic,veget
+fruitveget juic,long life bakeri product
+fruitveget juic,bottl beer
+fruitveget juic,white bread
+fruitveget juic,bottl water
+fruitveget juic,beef
+fruitveget juic,frankfurt
+fruitveget juic,salti snack
+fruitveget juic,sausag
+fruitveget juic,shop bag
+specialti bar,veget
+pastri,root veget
+brown bread,pastri
+napkin,pastri
+whippedsour cream,pastri
+pastri,dessert
+domest egg,pastri
+margarin,pastri
+pastri,citru fruit
+pastri,tropic fruit
+veget,pastri
+pastri,long life bakeri product
+white bread,pastri
+pastri,bottl water
+curd,pastri
+pastri,beef
+frankfurt,pastri
+salti snack,pastri
+waffl,pastri
+sausag,pastri
+pastri,shop bag
+pastri,pork
+process chees,veget
+brown bread,root veget
+napkin,root veget
+root veget,hygien articl
+root veget,berri
+whippedsour cream,root veget
+root veget,dessert
+domest egg,root veget
+root veget,hard chees
+frozen veget,root veget
+root veget,onion
+margarin,root veget
+root veget,citru fruit
+root veget,tropic fruit
+root veget,cream chees
+veget,root veget
+root veget,long life bakeri product
+root veget,bottl beer
+white bread,root veget
+root veget,bottl water
+curd,root veget
+root veget,beef
+frankfurt,root veget
+root veget,butter milk
+waffl,root veget
+sausag,root veget
+root veget,shop bag
+root veget,hamburg meat
+root veget,pork
+oil,root veget
+root veget,herb
+slice chees,root veget
+meat,root veget
+brown bread,domest egg
+margarin,brown bread
+brown bread,citru fruit
+brown bread,tropic fruit
+brown bread,veget
+brown bread,bottl beer
+brown bread,bottl water
+frankfurt,brown bread
+sausag,brown bread
+brown bread,shop bag
+brown bread,pork
+napkin,hygien articl
+napkin,whippedsour cream
+napkin,domest egg
+napkin,citru fruit
+napkin,tropic fruit
+napkin,veget
+napkin,bottl beer
+napkin,bottl water
+sausag,napkin
+napkin,shop bag
+napkin,pork
+hygien articl,citru fruit
+hygien articl,tropic fruit
+veget,hygien articl
+hygien articl,bottl water
+hygien articl,shop bag
+whippedsour cream,berri
+berri,citru fruit
+berri,tropic fruit
+veget,berri
+whippedsour cream,domest egg
+whippedsour cream,frozen veget
+whippedsour cream,onion
+margarin,whippedsour cream
+whippedsour cream,citru fruit
+whippedsour cream,tropic fruit
+whippedsour cream,cream chees
+whippedsour cream,veget
+whippedsour cream,long life bakeri product
+white bread,whippedsour cream
+whippedsour cream,bottl water
+curd,whippedsour cream
+whippedsour cream,beef
+frankfurt,whippedsour cream
+salti snack,whippedsour cream
+waffl,whippedsour cream
+sausag,whippedsour cream
+whippedsour cream,shop bag
+whippedsour cream,pork
+dessert,tropic fruit
+veget,dessert
+dessert,bottl water
+curd,dessert
+sausag,dessert
+shop bag,dessert
+domest egg,frozen veget
+margarin,domest egg
+domest egg,citru fruit
+domest egg,tropic fruit
+domest egg,cream chees
+domest egg,veget
+white bread,domest egg
+domest egg,bottl water
+curd,domest egg
+domest egg,beef
+frankfurt,domest egg
+sausag,domest egg
+domest egg,shop bag
+domest egg,pork
+veget,hard chees
+sausag,hard chees
+ham,tropic fruit
+veget,ham
+white bread,ham
+veget,pickl veget
+margarin,frozen veget
+frozen veget,citru fruit
+frozen veget,tropic fruit
+veget,frozen veget
+frozen veget,bottl water
+frankfurt,frozen veget
+sausag,frozen veget
+frozen veget,pork
+veget,can fish
+onion,citru fruit
+onion,tropic fruit
+veget,onion
+onion,bottl water
+soft chees,veget
+margarin,citru fruit
+margarin,tropic fruit
+margarin,veget
+margarin,bottl beer
+margarin,bottl water
+margarin,curd
+margarin,beef
+margarin,frankfurt
+margarin,sausag
+margarin,shop bag
+margarin,pork
+veget,semifinish bread
+tropic fruit,citru fruit
+cream chees,citru fruit
+veget,citru fruit
+bottl beer,citru fruit
+bottl water,citru fruit
+curd,citru fruit
+beef,citru fruit
+frankfurt,citru fruit
+sausag,citru fruit
+shop bag,citru fruit
+pork,citru fruit
+cream chees,tropic fruit
+veget,tropic fruit
+long life bakeri product,tropic fruit
+bottl beer,tropic fruit
+white bread,tropic fruit
+bottl water,tropic fruit
+curd,tropic fruit
+beef,tropic fruit
+frankfurt,tropic fruit
+butter milk,tropic fruit
+salti snack,tropic fruit
+candi,tropic fruit
+waffl,tropic fruit
+sausag,tropic fruit
+shop bag,tropic fruit
+pork,tropic fruit
+grape,tropic fruit
+frozen meal,tropic fruit
+slice chees,tropic fruit
+veget,cream chees
+cream chees,bottl water
+curd,cream chees
+sausag,cream chees
+cream chees,shop bag
+veget,long life bakeri product
+veget,bottl beer
+veget,uhtmilk
+white bread,veget
+veget,bottl water
+dish,veget
+veget,flour
+curd,veget
+veget,beef
+frankfurt,veget
+veget,butter milk
+veget,deterg
+salti snack,veget
+candi,veget
+waffl,veget
+veget,can beer
+sausag,veget
+veget,shop bag
+veget,beverag
+veget,hamburg meat
+veget,pork
+grape,veget
+veget,misc beverag
+cat food,veget
+veget,bake powder
+oil,veget
+veget,ice cream
+specialti chocol,veget
+frozen meal,veget
+veget,herb
+slice chees,veget
+meat,veget
+sausag,long life bakeri product
+long life bakeri product,shop bag
+bottl beer,bottl water
+frankfurt,bottl beer
+sausag,bottl beer
+bottl beer,shop bag
+bottl beer,pork
+uhtmilk,bottl water
+white bread,frankfurt
+white bread,sausag
+white bread,shop bag
+curd,bottl water
+beef,bottl water
+frankfurt,bottl water
+can beer,bottl water
+sausag,bottl water
+shop bag,bottl water
+pork,bottl water
+misc beverag,bottl water
+curd,sausag
+curd,shop bag
+sausag,beef
+beef,pork
+frankfurt,sausag
+frankfurt,shop bag
+frankfurt,pork
+salti snack,sausag
+salti snack,shop bag
+waffl,shop bag
+sausag,can beer
+can beer,shop bag
+sausag,shop bag
+sausag,hamburg meat
+sausag,pork
+sausag,slice chees
+sausag,meat
+shop bag,pork
+whole milk,coffe,yogurt
+whole milk,veget,coffe
+whole milk,yogurt,citru fruit
+whole milk,yogurt,tropic fruit
+whole milk,yogurt,bottl water
+pip fruit,whole milk,yogurt
+pip fruit,root veget,yogurt
+pip fruit,yogurt,tropic fruit
+pip fruit,veget,yogurt
+butter,whole milk,yogurt
+rollsbun,whole milk,yogurt
+rollsbun,yogurt,root veget
+rollsbun,yogurt,citru fruit
+rollsbun,yogurt,tropic fruit
+rollsbun,yogurt,bottl water
+soda,whole milk,yogurt
+rollsbun,soda,yogurt
+soda,yogurt,tropic fruit
+soda,yogurt,bottl water
+newspap,whole milk,yogurt
+newspap,rollsbun,yogurt
+newspap,veget,yogurt
+fruitveget juic,whole milk,yogurt
+fruitveget juic,soda,yogurt
+fruitveget juic,veget,yogurt
+pastri,whole milk,yogurt
+rollsbun,pastri,yogurt
+root veget,whole milk,yogurt
+root veget,yogurt,tropic fruit
+brown bread,whole milk,yogurt
+brown bread,veget,yogurt
+napkin,whole milk,yogurt
+whippedsour cream,whole milk,yogurt
+whippedsour cream,root veget,yogurt
+whippedsour cream,yogurt,tropic fruit
+whippedsour cream,veget,yogurt
+domest egg,whole milk,yogurt
+domest egg,veget,yogurt
+frozen veget,whole milk,yogurt
+margarin,whole milk,yogurt
+margarin,veget,yogurt
+tropic fruit,yogurt,citru fruit
+bottl water,yogurt,tropic fruit
+cream chees,whole milk,yogurt
+veget,whole milk,yogurt
+veget,butter,yogurt
+veget,rollsbun,yogurt
+veget,soda,yogurt
+veget,pastri,yogurt
+veget,root veget,yogurt
+veget,frozen veget,yogurt
+veget,yogurt,citru fruit
+veget,yogurt,tropic fruit
+veget,cream chees,yogurt
+veget,yogurt,bottl water
+veget,beef,yogurt
+veget,shop bag,yogurt
+bottl beer,whole milk,yogurt
+curd,whole milk,yogurt
+curd,yogurt,tropic fruit
+curd,veget,yogurt
+beef,whole milk,yogurt
+frankfurt,whole milk,yogurt
+sausag,whole milk,yogurt
+sausag,rollsbun,yogurt
+sausag,soda,yogurt
+sausag,root veget,yogurt
+sausag,veget,yogurt
+shop bag,whole milk,yogurt
+pip fruit,rollsbun,whole milk
+pip fruit,pastri,whole milk
+pip fruit,root veget,whole milk
+pip fruit,whippedsour cream,whole milk
+pip fruit,domest egg,whole milk
+pip fruit,whole milk,citru fruit
+pip fruit,whole milk,tropic fruit
+pip fruit,veget,whole milk
+pip fruit,sausag,whole milk
+butter,whole milk,root veget
+butter,whole milk,citru fruit
+butter,whole milk,tropic fruit
+butter,whole milk,bottl water
+butter,rollsbun,whole milk
+rollsbun,whole milk,chicken
+rollsbun,whole milk,root veget
+rollsbun,whole milk,citru fruit
+rollsbun,whole milk,tropic fruit
+rollsbun,bottl beer,whole milk
+rollsbun,whole milk,bottl water
+rollsbun,beef,whole milk
+rollsbun,shop bag,whole milk
+rollsbun,whole milk,pork
+rollsbun,soda,whole milk
+soda,whole milk,chocol
+soda,whole milk,root veget
+soda,whole milk,tropic fruit
+soda,whole milk,bottl water
+soda,shop bag,whole milk
+chicken,whole milk,root veget
+sugar,veget,whole milk
+newspap,rollsbun,whole milk
+newspap,root veget,whole milk
+newspap,whole milk,tropic fruit
+newspap,veget,whole milk
+fruitveget juic,rollsbun,whole milk
+fruitveget juic,soda,whole milk
+fruitveget juic,root veget,whole milk
+fruitveget juic,whole milk,tropic fruit
+fruitveget juic,veget,whole milk
+fruitveget juic,whole milk,bottl water
+rollsbun,pastri,whole milk
+soda,pastri,whole milk
+pastri,whole milk,root veget
+pastri,whole milk,tropic fruit
+root veget,whole milk,citru fruit
+root veget,whole milk,tropic fruit
+root veget,whole milk,bottl water
+root veget,beef,whole milk
+root veget,shop bag,whole milk
+root veget,whole milk,pork
+brown bread,rollsbun,whole milk
+brown bread,soda,whole milk
+brown bread,root veget,whole milk
+brown bread,whole milk,tropic fruit
+brown bread,veget,whole milk
+napkin,rollsbun,whole milk
+napkin,veget,whole milk
+whippedsour cream,butter,whole milk
+whippedsour cream,rollsbun,whole milk
+whippedsour cream,soda,whole milk
+whippedsour cream,root veget,whole milk
+whippedsour cream,whole milk,domest egg
+whippedsour cream,whole milk,citru fruit
+whippedsour cream,whole milk,tropic fruit
+whippedsour cream,veget,whole milk
+domest egg,butter,whole milk
+domest egg,rollsbun,whole milk
+domest egg,soda,whole milk
+domest egg,root veget,whole milk
+domest egg,whole milk,citru fruit
+domest egg,whole milk,tropic fruit
+domest egg,veget,whole milk
+rollsbun,frozen veget,whole milk
+frozen veget,whole milk,root veget
+margarin,rollsbun,whole milk
+margarin,domest egg,whole milk
+margarin,veget,whole milk
+tropic fruit,whole milk,citru fruit
+bottl water,whole milk,citru fruit
+bottl water,whole milk,tropic fruit
+veget,butter,whole milk
+veget,rollsbun,whole milk
+veget,whole milk,chocol
+veget,soda,whole milk
+veget,chicken,whole milk
+veget,pastri,whole milk
+veget,root veget,whole milk
+veget,hygien articl,whole milk
+veget,frozen veget,whole milk
+veget,onion,whole milk
+veget,whole milk,citru fruit
+veget,whole milk,tropic fruit
+veget,cream chees,whole milk
+veget,long life bakeri product,whole milk
+veget,bottl beer,whole milk
+veget,whole milk,bottl water
+veget,beef,whole milk
+veget,shop bag,whole milk
+veget,hamburg meat,whole milk
+veget,whole milk,pork
+bottl beer,whole milk,bottl water
+white bread,veget,whole milk
+curd,rollsbun,whole milk
+curd,root veget,whole milk
+curd,whippedsour cream,whole milk
+curd,whole milk,tropic fruit
+curd,veget,whole milk
+frankfurt,rollsbun,whole milk
+frankfurt,root veget,whole milk
+frankfurt,whole milk,tropic fruit
+frankfurt,veget,whole milk
+sausag,rollsbun,whole milk
+sausag,soda,whole milk
+sausag,pastri,whole milk
+sausag,root veget,whole milk
+sausag,whippedsour cream,whole milk
+sausag,whole milk,tropic fruit
+sausag,veget,whole milk
+oil,veget,whole milk
+pip fruit,veget,rollsbun
+pip fruit,root veget,tropic fruit
+pip fruit,veget,root veget
+pip fruit,whippedsour cream,veget
+pip fruit,tropic fruit,citru fruit
+pip fruit,veget,citru fruit
+pip fruit,veget,tropic fruit
+whippedsour cream,veget,butter
+rollsbun,veget,butter
+veget,butter,root veget
+veget,butter,tropic fruit
+soda,rollsbun,tropic fruit
+soda,rollsbun,bottl water
+soda,rollsbun,shop bag
+newspap,veget,rollsbun
+soda,pastri,rollsbun
+rollsbun,root veget,tropic fruit
+whippedsour cream,veget,rollsbun
+domest egg,veget,rollsbun
+margarin,veget,rollsbun
+bottl water,rollsbun,tropic fruit
+soda,veget,rollsbun
+pastri,veget,rollsbun
+veget,rollsbun,root veget
+veget,rollsbun,citru fruit
+veget,rollsbun,tropic fruit
+veget,rollsbun,bottl water
+veget,rollsbun,beef
+veget,rollsbun,shop bag
+veget,rollsbun,pork
+frankfurt,veget,rollsbun
+sausag,rollsbun,soda
+sausag,veget,rollsbun
+sausag,rollsbun,shop bag
+fruitveget juic,soda,bottl water
+domest egg,veget,soda
+bottl water,soda,tropic fruit
+pastri,veget,soda
+veget,soda,root veget
+veget,soda,tropic fruit
+veget,soda,bottl water
+veget,soda,shop bag
+soda,bottl beer,bottl water
+sausag,veget,soda
+sausag,soda,shop bag
+veget,chicken,root veget
+newspap,veget,root veget
+fruitveget juic,veget,root veget
+fruitveget juic,veget,tropic fruit
+veget,pastri,root veget
+veget,pastri,tropic fruit
+whippedsour cream,veget,root veget
+domest egg,veget,root veget
+margarin,veget,root veget
+tropic fruit,root veget,citru fruit
+veget,frozen veget,root veget
+veget,root veget,onion
+veget,root veget,citru fruit
+veget,root veget,tropic fruit
+veget,root veget,bottl water
+veget,root veget,beef
+veget,root veget,shop bag
+veget,root veget,pork
+curd,veget,root veget
+sausag,veget,root veget
+whippedsour cream,veget,domest egg
+whippedsour cream,veget,citru fruit
+whippedsour cream,veget,tropic fruit
+tropic fruit,veget,citru fruit
+bottl water,veget,citru fruit
+bottl water,veget,tropic fruit
+curd,veget,tropic fruit
+sausag,veget,tropic fruit
+sausag,veget,bottl water
+sausag,veget,shop bag
+pip fruit,veget,whole milk,yogurt
+fruitveget juic,veget,whole milk,yogurt
+root veget,yogurt,whole milk,tropic fruit
+whippedsour cream,veget,whole milk,yogurt
+veget,yogurt,whole milk,tropic fruit
+veget,rollsbun,whole milk,yogurt
+veget,root veget,whole milk,yogurt
+pip fruit,veget,root veget,whole milk
+whippedsour cream,veget,root veget,whole milk
+veget,rollsbun,whole milk,root veget
+veget,root veget,whole milk,citru fruit
+veget,root veget,whole milk,tropic fruit
