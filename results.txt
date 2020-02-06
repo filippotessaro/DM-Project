@@ -1,0 +1,7 @@
+('Size: ', '10000', '\t - Apriori Time time elapsed:', '0:00:03.238091')
+('Size: ', '20000', '\t - Apriori Time time elapsed:', '0:00:03.023285')
+('Size: ', '10000', '\t - Apriori Time time elapsed:', '0:00:59.208008')
+('Size: ', '20000', '\t - Apriori Time time elapsed:', '0:02:10.052811')
+('Size: ', '50000', '\t - Apriori Time time elapsed:', '0:04:31.690740')
+('Size: ', '100000', '\t - Apriori Time time elapsed:', '0:09:10.507574')
+('Size: ', '500000', '\t - Apriori Time time elapsed:', '0:46:53.079189')
